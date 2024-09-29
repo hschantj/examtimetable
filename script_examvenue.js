@@ -1,9 +1,8 @@
-const examVenueCSVPath = 'CSV_examvenue.csv'
-let headerRow = []
-let originalData = []
+var headerRow = []
+var originalData = []
 
 function loadCSV() {
-    fetch(examVenueCSVPath)
+    fetch('CSV_examvenue.csv')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network Error: ' + response.statusText)

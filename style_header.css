@@ -6,7 +6,6 @@
 }
 
 * {
-    /* background-color: #1D3D5E; */
     margin: 0;
     user-select: none;
 }
@@ -16,6 +15,7 @@ div.nav_bar {
     display: flex;
     height: 50px;
     letter-spacing: 0.5px;
+    z-index: 1000;
 }
 
 div.nav_content {
@@ -24,12 +24,14 @@ div.nav_content {
     color: var(--second-color);
 }
 
-div.nav_content p {
+div.nav_content a {
     position: relative;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--second-color);
 }
 
-div.nav_content p:after {
+div.nav_content a:after {
     content: "";
     position: absolute;
     background-color: var(--second-color);
@@ -40,6 +42,6 @@ div.nav_content p:after {
     transition: 0.3s;
 }
 
-div.nav_content p:hover::after {
+div.nav_content a:hover::after {
     width: 100%;
 }

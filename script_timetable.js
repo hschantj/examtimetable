@@ -1,7 +1,4 @@
-const timeTableCSVPath = 'CSV_timetable.csv'
-
-let CSVdata = []
-
+var CSVdata = []
 
 async function fetchCSV(url) {
     const response = await fetch(url)
@@ -68,9 +65,15 @@ function parseCSV(csv) {
 }
 
 async function loadCSVandFillTable() {
-    const csv = await fetchCSV(timeTableCSVPath)
+    const csv = await fetchCSV('CSV_timetable.csv')
     const data = parseCSV(csv)
     fillTable(data)
 }
+document.getElementById('back-to-top').addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})
 
 loadCSVandFillTable()

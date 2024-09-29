@@ -20,14 +20,27 @@ td {
     padding: 4px 16px;
 }
 
-td{
+td {
     text-align: center;
 }
 
-td.class_tab{
+td.class_tab {
     width: 140px;
 }
 
-td.class_tab_narrow{
+td.class_tab_narrow {
     width: 100px;
+}
+
+div.back_to_top {
+    border: 1px solid black;
+    background-color: aliceblue;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    margin: 16px;
+    right: 0;
+    bottom: 0;
 }
