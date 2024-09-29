@@ -1,0 +1,45 @@
+:root {
+    --first-color: #1D3D5E;
+    --second-color: #B8D0ED;
+    --third-color: #7B9098;
+    --fourth-color: #9D8C56;
+}
+
+* {
+    /* background-color: #1D3D5E; */
+    margin: 0;
+    user-select: none;
+}
+
+div.nav_bar {
+    background-color: var(--first-color);
+    display: flex;
+    height: 50px;
+    letter-spacing: 0.5px;
+}
+
+div.nav_content {
+    align-content: center;
+    margin: 0px 12px;
+    color: var(--second-color);
+}
+
+div.nav_content p {
+    position: relative;
+    cursor: pointer;
+}
+
+div.nav_content p:after {
+    content: "";
+    position: absolute;
+    background-color: var(--second-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+div.nav_content p:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+:root {
+    --first-color: #1D3D5E;
+    --second-color: #B8D0ED;
+    --third-color: #7B9098;
+    --fourth-color: #9D8C56;
+}
+
+input {
+    display: block;
+    margin: 16px auto;
+    font-size: 24px;
+}
+
+table {
+    margin: 10px auto;
+}
+
+tr,
+th,
+td {
+    padding: 4px 16px;
+    text-align: center;
+    font-size: larger;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: var(--third-color);
+}
+
+tr:nth-child(odd){
+    background-color: var(--second-color);
+}
+
+th{
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+div.back_to_top {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    margin: 16px;
+    right: 0;
+    bottom: 0;
+}
