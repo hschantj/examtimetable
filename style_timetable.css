@@ -2,6 +2,7 @@
     user-select: none;
     margin: 0;
     letter-spacing: 0.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
@@ -22,6 +23,7 @@ td {
 
 td {
     text-align: center;
+    font-weight:500;
 }
 
 td.class_tab {

@@ -1,3 +1,10 @@
+:root {
+    --first-color: #1D3D5E;
+    --second-color: #B8D0ED;
+    --third-color: #7B9098;
+    --fourth-color: #9D8C56;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -5,6 +12,19 @@ header {
     right: 0;
 }
 
-main{
+main {
     margin-top: 66px;
+}
+
+a.link_button {
+    text-decoration: none;
+    display: block;
+    margin: 12px auto;
+    height: 50px;
+    width: 200px;
+    color: var(--first-color);
+    background-color: var(--second-color);
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;
 }
