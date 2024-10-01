@@ -5,6 +5,10 @@
     --fourth-color: #9D8C56;
 }
 
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -17,14 +21,15 @@ main {
 }
 
 a.link_button {
-    text-decoration: none;
     display: block;
-    margin: 12px auto;
-    height: 50px;
+    margin: 8px auto;
+    text-decoration: none;
+    background-color: red;
+    height: 48px;
     width: 200px;
-    color: var(--first-color);
-    background-color: var(--second-color);
     text-align: center;
     align-content: center;
-    border-radius: 4px;
+    border-radius: 8px;
+    background-color: var(--second-color);
+    color: var(--first-color);
 }

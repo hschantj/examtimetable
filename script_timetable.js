@@ -33,8 +33,8 @@ function fillTable(data) {
     Object.values(schedule).forEach(row => {
         const tr = document.createElement('tr')
         tr.innerHTML = `
-            <td>${row.date}</td>
-            <td>${row.time}</td>
+            <td style="white-space:nowrap">${convertDate(row.date)}</td>
+            <td>${convertTime(row.time)}</td>
             <td class="class_tab">${row.J1}</td>
             <td class="class_tab">${row.J2}</td>
             <td class="class_tab">${row.J3}</td>
@@ -62,6 +62,18 @@ function parseCSV(csv) {
         }
     })
     return data
+}
+
+function convertDate(data) {
+    var tempdate = data.trim().split('/')
+    date = `${tempdate[0].padStart(2, '0')}-${tempdate[1].padStart(2, '0')}-${tempdate[2].padStart(4, '0')}`
+    return date
+}
+
+function convertTime(data) {
+    var temptime = data.trim().split(':')
+    time = `${temptime[0].padStart(2, '0')}:${temptime[1].padStart(2, '0')}`
+    return time
 }
 
 async function loadCSVandFillTable() {

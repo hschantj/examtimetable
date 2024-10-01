@@ -2,7 +2,6 @@
     user-select: none;
     margin: 0;
     letter-spacing: 0.5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
@@ -21,9 +20,22 @@ td {
     padding: 4px 16px;
 }
 
+th {
+    font-size: large;
+}
+
+tr:hover,
+tr:hover td:hover {
+    background-color: #B8D0ED;
+    font-weight: bold;
+}
+
+tr:hover td:hover {
+    font-weight: bold;
+}
+
 td {
     text-align: center;
-    font-weight:500;
 }
 
 td.class_tab {
