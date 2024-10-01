@@ -27,7 +27,6 @@ th {
 tr:hover,
 tr:hover td:hover {
     background-color: #B8D0ED;
-    font-weight: bold;
 }
 
 tr:hover td:hover {
